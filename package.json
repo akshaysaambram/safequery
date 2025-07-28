@@ -25,6 +25,14 @@
   "publishConfig": {
     "access": "public"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akshaysaambram/safequery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/akshaysaambram/safequery/issues"
+  },
+  "homepage": "https://github.com/akshaysaambram/safequery#readme",
   "scripts": {
     "types": "tsc",
     "build": "tsup index.ts --format esm,cjs --dts"
