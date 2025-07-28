@@ -1,0 +1,41 @@
+{
+  "name": "@akshaysaambram/safequery",
+  "version": "1.0.3",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "index.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "author": "Akshay Saambram",
+  "license": "MIT",
+  "description": "SafeQuery is a wrapper around React Query (@tanstack/react-query), which provides a convenient way to handle loading and error states when making server requests. It ensures that the component is not rendered until the data is available, and provides a fallback component when the request fails or is still loading.",
+  "keywords": [
+    "react-query",
+    "wrapper",
+    "react"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "types": "tsc",
+    "build": "tsup index.ts --format esm,cjs --dts"
+  },
+  "peerDependencies": {
+    "@tanstack/react-query": "^5.80.10",
+    "@types/react": "^19.1.8",
+    "react": "^19.1.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0"
+  }
+}
