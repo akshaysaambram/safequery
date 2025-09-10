@@ -1,9 +1,9 @@
 {
   "name": "@akshaysaambram/safequery",
-  "version": "1.0.4",
-  "main": "dist/index.js",
+  "version": "1.0.6",
+  "main": "dist/index.cjs",
   "types": "dist/index.d.ts",
-  "module": "index.ts",
+  "module": "index.js",
   "type": "module",
   "files": [
     "dist"
@@ -19,7 +19,8 @@
   "exports": {
     ".": {
       "import": "./dist/index.js",
-      "require": "./dist/index.js"
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
     }
   },
   "publishConfig": {

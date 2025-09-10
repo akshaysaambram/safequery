@@ -1,3 +1,1 @@
-import { SafeQuery } from "@/components/SafeQuery";
-
-export { SafeQuery };
+export { SafeQuery } from "@/components/SafeQuery";
